@@ -17,8 +17,8 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -36,6 +36,29 @@ body {
     vertical-align: middle;
 }
 
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
+  
+
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
@@ -44,6 +67,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -55,7 +79,7 @@ body {
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 74px);
+    width: calc(100% - 84px);
     vertical-align: middle;
 }
 
@@ -70,7 +94,8 @@ body {
     margin: 0 1rem;
 }
 
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
@@ -78,12 +103,15 @@ body {
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:active {
+.main-nav__item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
     color: white;
     border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
     color: white;
     background: #ff1b68;
     padding: 0.5rem 1rem;
@@ -91,7 +119,9 @@ body {
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
     color: #ff1b68;
     background: white;
     border: none;
@@ -145,3 +175,36 @@ body {
 .main-footer__link a:active {
     color: #ccc;
 }
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 80%;
+    height: 100vh;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+
+  .open {
+      display: block !important;
+  }
