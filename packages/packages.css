@@ -1,5 +1,5 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 .background {
     background: url("../images/plans-background.jpg") center/cover;
@@ -13,7 +13,7 @@ main {
 
 .package {
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     border: 5px solid #0e4f1f;
     border-left: none;
     background: #d4ffdc;
@@ -30,7 +30,7 @@ main {
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
     position: relative;
 }
 
@@ -43,9 +43,9 @@ main {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin: 20px;
-    font-size: 12px;
-    padding: 8px;
+    margin: 1.2rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
     color: white;
     background: #ff5454;
 }
@@ -55,9 +55,9 @@ main {
 }
 
 .package__description {
-    padding: 16px;
+    padding: 1rem;
     border: 1px solid #0e4f1f;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
 }
