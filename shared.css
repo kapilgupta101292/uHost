@@ -44,19 +44,26 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
-  }
-  
-  .toggle-button:focus {
+}
+
+.toggle-button:focus {
     outline: none;
-  }
-  
-  .toggle-button__bar {
+}
+
+.toggle-button__bar {
     width: 100%;
     height: 0.2rem;
     background: black;
     display: block;
     margin: 0.6rem 0;
-  }
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+}
+
   
 
 .main-header__brand {
@@ -64,8 +71,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 3rem;
+    width: 3rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -77,7 +84,7 @@ body {
 
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 84px);
     vertical-align: middle;
@@ -127,6 +134,14 @@ body {
     border: none;
 }
 
+
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+    }
+}
+
+
 .button {
     background-color: #0e4f1f;
     color: white;
@@ -162,8 +177,8 @@ body {
     text-align: center;
 }
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -174,6 +189,13 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
 
 .mobile-nav {
