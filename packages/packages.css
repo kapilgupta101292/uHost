@@ -18,6 +18,7 @@ main {
     border-left: none;
     background: #d4ffdc;
     vertical-align: middle;
+    overflow: hidden;
 }
 
 .package:hover,
@@ -41,13 +42,17 @@ main {
 
 .package__badge {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 1.2rem;
+    top: 0;
+    right: 0;
+    margin: 0;
     font-size: 0.8rem;
+    width: 12rem;
+    text-align: center;
     padding: 0.5rem;
     color: white;
     background: #ff5454;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform-origin: center;
 }
 
 .package__subtitle {
